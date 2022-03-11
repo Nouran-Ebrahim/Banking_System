@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
         <div class="container-fluid nav-con">
             <div class="head">
                 <img src="../images/logo.png" alt="No" class="logo">
-                <a class="navbar-brand size" href="index.php">Sparks Bank</a>
+                <a class="navbar-brand size" href="index.php">Banking System</a>
             </div>
             <button class="navbar-toggler hum" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
