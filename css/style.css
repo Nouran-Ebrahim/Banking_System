@@ -42,15 +42,7 @@ body{
 }
 
 
-@media only screen and (max-width: 576px) {
-  
-  .con1{
-    overflow: scroll;
-    width: 98%;
-    justify-content: flex-start;
-  }
-  
-}
+
 
 .data_con{
   margin-top: 5%;
@@ -329,3 +321,14 @@ img.logo {
     transform: skewY(-30deg);
   }
 
+  @media only screen and (max-width: 576px) {
+  
+    .con1{
+      overflow: scroll;
+      width: 98%;
+      justify-content: flex-start;
+    }
+    .fr{
+      width: 70%;
+    }
+  }
