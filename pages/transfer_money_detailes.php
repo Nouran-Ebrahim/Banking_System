@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Banking System</title>
+    <title>Banking System</title>
     <link rel='stylesheet' type='text/css' href='../css/bootstrap.css'>
     <link rel='stylesheet' type='text/css' href='../css/style.css'>
     <link rel='stylesheet' type='text/css' href='../bootstrap-icons-1.7.2/bootstrap-icons.css'>
@@ -47,11 +47,11 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-<nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
         <div class="container-fluid nav-con">
             <div class="head">
-            <img src="../images/logo.png" alt="No" class="logo" >
-            <a class="navbar-brand size" href="index.php"  >Banking System</a>
+                <img src="../images/logo.png" alt="No" class="logo">
+                <a class="navbar-brand size" href="index.php">Sparks Bank</a>
             </div>
             <button class="navbar-toggler hum" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,10 +59,10 @@ if (isset($_POST['submit'])) {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link view active" aria-current="page" href="view_customers&transfer_money.php" >View Customers </a>
+                        <a class="nav-link view active" aria-current="page" href="view_customers&transfer_money.php">View Customers </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link view" href="transfer_history.php" >Transfer Transaction History</a>
+                        <a class="nav-link view" href="transfer_history.php">Transfer Transaction History</a>
                     </li>
 
                 </ul>
@@ -70,34 +70,37 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
     </nav>
-    <div class="con" >
-        <table class="table table-bordered tb" style="margin-bottom: 0;">
-            <thead>
-                <tr>
+    <div class="con">
+        <div class="con1" style="margin-bottom:0">
+            <div class="table_des">
+                <table class="table table-bordered tb" style="margin-bottom: 0;">
+                    <thead>
+                        <tr>
 
-                    <th style="text-align: center;background-color: #dcc1c3;" scope="col">ID.</th>
-                    <th style="text-align: center;background-color: #dcc1c3;" scope="col">Name</th>
-                    <th style="text-align: center;background-color: #dcc1c3;" scope="col">E-Mail</th>
-                    <th style="text-align: center;background-color: #dcc1c3;" scope="col">Balance(in Rs.)</th>
+                            <th style="text-align: center;background-color: #dcc1c3;" scope="col">ID.</th>
+                            <th style="text-align: center;background-color: #dcc1c3;" scope="col">Name</th>
+                            <th style="text-align: center;background-color: #dcc1c3;" scope="col">E-Mail</th>
+                            <th style="text-align: center;background-color: #dcc1c3;" scope="col">Balance(in Rs.)</th>
 
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                foreach ($sender_data as $data) {
-                ?>
-                    <tr>
-                        <th style="text-align: center;" scope="row"><?php echo $data['id'] ?></th>
-                        <td style="text-align: center;"><?php echo $data['name'] ?></td>
-                        <td style="text-align: center;"><?php echo $data['email'] ?></td>
-                        <td style="text-align: center;"><?php echo $data['balance'] ?></td>
-                    </tr>
-                <?php
-                }
-                ?>
-            </tbody>
-        </table>
-    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        foreach ($sender_data as $data) {
+                        ?>
+                            <tr>
+                                <th style="text-align: center;" scope="row"><?php echo $data['id'] ?></th>
+                                <td style="text-align: center;"><?php echo $data['name'] ?></td>
+                                <td style="text-align: center;"><?php echo $data['email'] ?></td>
+                                <td style="text-align: center;"><?php echo $data['balance'] ?></td>
+                            </tr>
+                        <?php
+                        }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         <form class="row g-3 fr" method="POST" style="background-color: white; margin-top:6%">
             <div class="col-md-6">
                 <label for="formGroupExampleInput" class="form-label" style="font-size: 15pt;">Transfer to:</label>
@@ -125,7 +128,7 @@ if (isset($_POST['submit'])) {
 
 
             <div class="col-12">
-                <button  name="submit" type="submit" class="btn btn-primary bt" >Transfer</button>
+                <button name="submit" type="submit" class="btn btn-primary bt">Transfer</button>
             </div>
         </form>
 
@@ -144,7 +147,7 @@ if (isset($_POST['submit'])) {
 
         </div>
     </div>
-        <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

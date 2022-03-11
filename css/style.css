@@ -16,39 +16,39 @@ body{
 .con{
   display: flex;
   flex-direction: column;
-  height:100%;
-  background-color: aqua;
   justify-content: space-between;
   align-items: center;
 }
 .table_des{
-  width: 100%;
+  
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  width: 95%;
 }
+
+.con1{
+  width: 90%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
 .tb{
-     width: 70%;
-     margin-top:5%; 
+     width: 100%; 
      /*margin-left: 15%;*/
-     margin-bottom:5% ; 
      background-color: white;
      border-color:rgba(33,37,41,1) ;
 }
 
 
-@media only screen and (max-width: 489px) {
-  .tb{
-    width: fit-content;
-  }
-  .table_des{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+@media only screen and (max-width: 576px) {
+  
+  .con1{
     overflow: scroll;
-   height: 100%;
-}
+    width: 98%;
+    justify-content: flex-start;
+  }
+  
 }
 
 .data_con{
