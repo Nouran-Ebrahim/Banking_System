@@ -7,7 +7,6 @@
 4)Flow: Home Page > View all Customers > Select and View one Customer > Transfer Money > Select customer to transfer to > View all Customers.
 5)No Login Page. No User Creation. Only transfer of money between multiple users.
 
-Website Link:
-GitHub Link: https://github.com/Nouran-Ebrahim/Banking_System.git
+Website Link:http://banksystem.epizy.com/Banking_System/pages/index.php
 LinkedIn: https://www.linkedin.com/in/eng-nouran-el-mohamady/
 
