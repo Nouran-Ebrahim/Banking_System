@@ -1,4 +1,4 @@
-# Basic Banking System
+# Basic Banking System Task1
 * Create a simple dynamic website which has the following specs:
 ## Steps
 1) Start with creating a dummy data in database for upto 10 customers.
@@ -7,6 +7,6 @@
 4)Flow: Home Page > View all Customers > Select and View one Customer > Transfer Money > Select customer to transfer to > View all Customers.
 5)No Login Page. No User Creation. Only transfer of money between multiple users.
 
-Website Link:http://banksystem.epizy.com/Banking_System/pages/index.php
-LinkedIn: https://www.linkedin.com/in/eng-nouran-el-mohamady/
-
+* Website Link: http://banksystem.epizy.com/Banking_System/pages/index.php
+* LinkedIn: https://www.linkedin.com/in/eng-nouran-el-mohamady/
+* Link for Sparks Foundation : https://lnkd.in/gxEx4RsQ
